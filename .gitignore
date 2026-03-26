@@ -14,6 +14,3 @@ build/
 .idea/
 *.swp
 *.swo
-
-# Accidental nested repo
-finance-slack-bot/
