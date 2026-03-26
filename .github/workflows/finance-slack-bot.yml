@@ -23,4 +23,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run finance slack bot (test)
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
         run: python3 bot.py --test
