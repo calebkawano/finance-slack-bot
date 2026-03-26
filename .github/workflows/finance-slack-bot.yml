@@ -2,8 +2,8 @@ name: Finance Slack Bot
 
 on:
   schedule:
-    - cron: '0 17 * * 1'  # Monday 9am PST (UTC-8)
-    - cron: '0 17 * * 5'  # Friday 9am PST (UTC-8)
+    - cron: '0 16 * * 1'  # Monday 9am PST (UTC-8)
+    - cron: '0 16 * * 5'  # Friday 9am PST (UTC-8)
   workflow_dispatch:
 
 jobs:
